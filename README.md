@@ -1,41 +1,32 @@
 <img src="assets/banner.svg" alt="Alex – ruhig bauen, unruhig denken" width="100%"/>
 
-<br/>
-
-Ich baue Systeme, die man nicht ständig anfassen muss.
-Dahinter steckt viel Unruhe — davor soll nur Ruhe sichtbar sein.
+Ich bin Alex. Ich baue mir einen Homeserver, auf dem Geld, Smart Home, Serien und KI zusammenlaufen.
+Dazwischen eine Seite, die ausrechnet, wie viel Kaffee tödlich wäre. Weil ich kann.
 
 <br/>
 
-### Was dahinter steckt
+### Wie ich ticke
 
 **Vertrauen ist gut, Testabdeckung ist besser.**
-`Fortress-Sweep` `Pipeline` `Staging-Smoke`
-Security-Sweep über 20 Kategorien, Test-first, und eine Pipeline, die bei rot stehen bleibt.
+Erst der rote Test, dann der Fix. `Fortress-Sweep` `Pipeline` `Staging-Smoke`
 
-**Codeguard sagt nein, bevor ich es tippe.**
-`reset --hard` `migrate:fresh` `push --force`
-Blockierende Hooks vor der Ausführung. Auch gegen mich selbst, auch gegen die KI.
+**Ich lasse KI arbeiten, die Verantwortung behalte ich.**
+Vier Modelle in Reihe (`Gemini` → `Ollama` → `Mistral` → `Groq`), Tagesbudget pro Anbieter, und ein Hook, der auch der KI `reset --hard` verbietet.
 
-**Ein Backup, das nie zurückgespielt wurde, ist nur eine Vermutung.**
-`Backup-Watchdog` `Restore-Test`
+**Ich baue gern alles selbst.**
+Server, Backend, Oberfläche, Bot, Netzwerk. Frisches Ubuntu → ein Playbook → fertig.
 
-**Der Cache heilt sich selbst.**
-`Cache-Monitor` misst alle 10 Sekunden, behebt hängende Consumer allein und meldet nur, wenn es wirklich kritisch ist.
+**Ich traue mir selbst nicht ganz.**
+Deshalb `Codeguard`, Rollback-Anker und ein Backup, das auch wirklich mal zurückgespielt wird.
 
-**Merge rot? Zurück auf Anfang, und zwar laut.**
-`Rollback-Anker` `last-known-good` `Deploy-Block`
+**Ich will es als Erster wissen.**
+Wenn etwas kaputtgeht, meldet sich der Server. Hängende Caches heilt er allein.
 
-**Frisches Ubuntu → ein Playbook → fertiger Homeserver.**
-`Ansible` `Docker Compose`
+**Ich schreibe auf, warum.**
+Entscheidungen, Fallen, verworfene Wege. Mein späteres Ich dankt es mir.
 
-**Vier KI-Anbieter in Reihe.**
-`Gemini` → `Ollama` → `Mistral` → `Groq`
-Fällt einer aus oder ist das Tagesbudget leer, übernimmt der nächste.
-
-**Jede Session beginnt mit Lesen.**
-`ADRs` `Glossar` `brain/`
-Ein Hook legt das passende Kapitel in den Kontext, bevor der erste Befehl läuft.
+**Und ja, ich zocke und schaue Serien.**
+CS2-Stats, Jellyfin, Spotify: alles im selben Dashboard. Nutzen muss es sich ja auch lohnen.
 
 <br/>
 
