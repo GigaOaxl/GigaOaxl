@@ -7,14 +7,39 @@ Dahinter steckt viel Unruhe — davor soll nur Ruhe sichtbar sein.
 
 <br/>
 
-### Worauf ich Wert lege
+### Gut ist gut. Besser ist besser.
 
-- **Codequalität** – Codeguard, Pint, Quality-Gate vor jedem Push
-- **Tests** – Test-first, Fortress-Sweep, Staging-Smoke in der Pipeline
-- **Absicherung** – WireGuard, Secret-Rotation, Rollback bei jedem Deploy
-- **Betrieb** – Health-Checks, Watchdogs, Backups mit Restore-Test
-- **Reproduzierbarkeit** – Server-Neuaufbau per Ansible und Docker Compose
-- **Dokumentation** – Architekturentscheidungen und Glossar im Repo
+**Vertrauen ist gut, Testabdeckung ist besser.**
+`Fortress-Sweep` `Pipeline` `Staging-Smoke`
+Security-Sweep über 20 Kategorien, Test-first, und eine Pipeline, die bei rot stehen bleibt.
+
+**Vorsicht ist gut, Codeguard ist besser.**
+`Codeguard` `Pre-Push-Gate` `Pint`
+Hooks verweigern `reset --hard`, `migrate:fresh` und Force-Push, bevor sie laufen.
+
+**Backups sind gut, Restore-Tests sind besser.**
+`Backup-Watchdog` `Restore-Test`
+Das Backup wird zurückgespielt und geprüft. Läuft es nicht, kommt ein Alert.
+
+**Monitoring ist gut, Selbstheilung ist besser.**
+`Cache-Monitor` `Device-Healthcheck` `Auto-Reconnect`
+Hängende Streams und verlorene ADB-Verbindungen werden behoben, bevor ich es merke.
+
+**Ein Deploy ist gut, ein Rückweg ist besser.**
+`Rollback-Anker` `last-known-good` `Deploy-Block`
+Geht ein Merge schief, setzt die Pipeline zurück und meldet es.
+
+**Ein Server ist gut, einer, den man neu aufbauen kann, ist besser.**
+`Ansible` `Docker Compose` `Multi-Node-Vorbereitung`
+Frisches Ubuntu, ein Playbook, kompletter Stack.
+
+**Ein LLM ist gut, vier sind besser.**
+`Gemini` → `Ollama` → `Mistral` → `Groq`
+Fallback-Kette mit Tagesbudget pro Anbieter und Alert bei 80 %.
+
+**Dokumentation ist gut, Wissen, das gelesen werden muss, ist besser.**
+`ADRs` `Glossar` `brain/`
+Ein Hook zwingt jede Session, zuerst das passende Kapitel zu lesen.
 
 <br/>
 
