@@ -7,25 +7,31 @@ Dahinter steckt viel Unruhe — davor soll nur Ruhe sichtbar sein.
 
 <br/>
 
-### Was mir wichtig ist
+### Wie ich arbeite
 
-**Codequalität ist mir wichtig** — *Codeguard*
-Blockierende Hooks verweigern `reset --hard`, `migrate:fresh`, Secret-Leaks und Force-Pushes, bevor sie passieren. Dazu Pint und ein Pre-Push-Quality-Gate.
+**Mein Code kriegt einen Türsteher.**
+`Codeguard` · Pint · Quality-Gate vor jedem Push
+Ein Hook sagt nein, bevor ich `reset --hard` tippe. Auch zu mir.
 
-**Vertrauen ist gut, Testabdeckung ist besser** — *Fortress-Sweep · Pipeline · Staging-Smoke · Test-first*
-Erst der rote Test, dann der Fix an der Ursache. Ein Security-Sweep über 20 Kategorien, eine Pipeline, die bei rot stehen bleibt, und ein Smoke-Test, bevor etwas live geht.
+**Vertrauen ist gut. Testabdeckung ist besser.**
+`Fortress-Sweep` · Pipeline · Staging-Smoke · Test-first
+Erst rot, dann grün. Läuft was rot durch, bleibt die Pipeline stehen und sagt es laut.
 
-**Sicherheit ist kein Add-on** — *WireGuard · Secret-Rotation · Rollback-Anker*
-Das Dashboard hängt hinter VPN, Secrets werden rotiert statt versteckt, und jeder Deploy hat einen Weg zurück.
+**Ich schlafe besser mit Rollback.**
+`WireGuard` · Secret-Rotation · Rollback-Anker
+Nichts geht live, wenn ich es nicht auch wieder zurückholen kann.
 
-**Wenn es kaputtgeht, will ich es zuerst wissen** — *Watchdogs · Health-Checks · Cache-Monitor*
-Backups mit Restore-Test, Container-Alerts, selbstheilender Cache. Wenig Lärm, nur wenn es zählt.
+**Der Server meldet sich zuerst.**
+`Watchdogs` · Health-Checks · Cache-Monitor · Restore-Test
+Ein Backup zählt erst, wenn ich es zurückgespielt habe.
 
-**Neuaufbau ohne Angst** — *Ansible · Docker Compose · Multi-Node-Vorbereitung*
-Ein frischer Ubuntu-Server wird mit einem Playbook zum kompletten Homeserver.
+**Server abgebrannt? Dauert einen Kaffee.**
+`Ansible` · Docker Compose
+Frisches Ubuntu, ein Playbook, alles wieder da.
 
-**Das Warum soll überleben** — *ADRs · Glossar · brain/*
-Entscheidungen, Fallen und verworfene Wege stehen im Repo, nicht nur in meinem Kopf.
+**Mein zukünftiges Ich ist auch ein User.**
+`ADRs` · Glossar · brain/
+Warum etwas so ist, steht im Repo. Nicht in meinem Kopf.
 
 <br/>
 
