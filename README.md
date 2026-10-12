@@ -7,31 +7,14 @@ Dahinter steckt viel Unruhe — davor soll nur Ruhe sichtbar sein.
 
 <br/>
 
-### Wie ich arbeite
+### Worauf ich Wert lege
 
-**Mein Code kriegt einen Türsteher.**
-`Codeguard` · Pint · Quality-Gate vor jedem Push
-Ein Hook sagt nein, bevor ich `reset --hard` tippe. Auch zu mir.
-
-**Vertrauen ist gut. Testabdeckung ist besser.**
-`Fortress-Sweep` · Pipeline · Staging-Smoke · Test-first
-Erst rot, dann grün. Läuft was rot durch, bleibt die Pipeline stehen und sagt es laut.
-
-**Ich schlafe besser mit Rollback.**
-`WireGuard` · Secret-Rotation · Rollback-Anker
-Nichts geht live, wenn ich es nicht auch wieder zurückholen kann.
-
-**Der Server meldet sich zuerst.**
-`Watchdogs` · Health-Checks · Cache-Monitor · Restore-Test
-Ein Backup zählt erst, wenn ich es zurückgespielt habe.
-
-**Server abgebrannt? Dauert einen Kaffee.**
-`Ansible` · Docker Compose
-Frisches Ubuntu, ein Playbook, alles wieder da.
-
-**Mein zukünftiges Ich ist auch ein User.**
-`ADRs` · Glossar · brain/
-Warum etwas so ist, steht im Repo. Nicht in meinem Kopf.
+- **Codequalität** – Codeguard, Pint, Quality-Gate vor jedem Push
+- **Tests** – Test-first, Fortress-Sweep, Staging-Smoke in der Pipeline
+- **Absicherung** – WireGuard, Secret-Rotation, Rollback bei jedem Deploy
+- **Betrieb** – Health-Checks, Watchdogs, Backups mit Restore-Test
+- **Reproduzierbarkeit** – Server-Neuaufbau per Ansible und Docker Compose
+- **Dokumentation** – Architekturentscheidungen und Glossar im Repo
 
 <br/>
 
