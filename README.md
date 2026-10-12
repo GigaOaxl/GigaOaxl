@@ -7,39 +7,35 @@ Dahinter steckt viel Unruhe — davor soll nur Ruhe sichtbar sein.
 
 <br/>
 
-### Gut ist gut. Besser ist besser.
+### Was dahinter steckt
 
 **Vertrauen ist gut, Testabdeckung ist besser.**
 `Fortress-Sweep` `Pipeline` `Staging-Smoke`
 Security-Sweep über 20 Kategorien, Test-first, und eine Pipeline, die bei rot stehen bleibt.
 
-**Vorsicht ist gut, Codeguard ist besser.**
-`Codeguard` `Pre-Push-Gate` `Pint`
-Hooks verweigern `reset --hard`, `migrate:fresh` und Force-Push, bevor sie laufen.
+**Codeguard sagt nein, bevor ich es tippe.**
+`reset --hard` `migrate:fresh` `push --force`
+Blockierende Hooks vor der Ausführung. Auch gegen mich selbst, auch gegen die KI.
 
-**Backups sind gut, Restore-Tests sind besser.**
+**Ein Backup, das nie zurückgespielt wurde, ist nur eine Vermutung.**
 `Backup-Watchdog` `Restore-Test`
-Das Backup wird zurückgespielt und geprüft. Läuft es nicht, kommt ein Alert.
 
-**Monitoring ist gut, Selbstheilung ist besser.**
-`Cache-Monitor` `Device-Healthcheck` `Auto-Reconnect`
-Hängende Streams und verlorene ADB-Verbindungen werden behoben, bevor ich es merke.
+**Der Cache heilt sich selbst.**
+`Cache-Monitor` misst alle 10 Sekunden, behebt hängende Consumer allein und meldet nur, wenn es wirklich kritisch ist.
 
-**Ein Deploy ist gut, ein Rückweg ist besser.**
+**Merge rot? Zurück auf Anfang, und zwar laut.**
 `Rollback-Anker` `last-known-good` `Deploy-Block`
-Geht ein Merge schief, setzt die Pipeline zurück und meldet es.
 
-**Ein Server ist gut, einer, den man neu aufbauen kann, ist besser.**
-`Ansible` `Docker Compose` `Multi-Node-Vorbereitung`
-Frisches Ubuntu, ein Playbook, kompletter Stack.
+**Frisches Ubuntu → ein Playbook → fertiger Homeserver.**
+`Ansible` `Docker Compose`
 
-**Ein LLM ist gut, vier sind besser.**
+**Vier KI-Anbieter in Reihe.**
 `Gemini` → `Ollama` → `Mistral` → `Groq`
-Fallback-Kette mit Tagesbudget pro Anbieter und Alert bei 80 %.
+Fällt einer aus oder ist das Tagesbudget leer, übernimmt der nächste.
 
-**Dokumentation ist gut, Wissen, das gelesen werden muss, ist besser.**
+**Jede Session beginnt mit Lesen.**
 `ADRs` `Glossar` `brain/`
-Ein Hook zwingt jede Session, zuerst das passende Kapitel zu lesen.
+Ein Hook legt das passende Kapitel in den Kontext, bevor der erste Befehl läuft.
 
 <br/>
 
