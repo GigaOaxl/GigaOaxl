@@ -15,17 +15,17 @@ Leicht, trocken, selbstironisch. Kein Lebenslauf. Kein JS (nur SVG mit CSS/SMIL 
 - Ein Commit pro Gruppe, nach jeder Gruppe STOPP bis Freigabe.
 
 ## Erledigt
-- [x] Gruppe 0: Fundament (diese Datei, alter Banner entfernt, README als Platzhalter)
+- [x] Gruppe 0: Fundament
+- [x] Gruppe 1–5 am Stück (Alex-Wunsch): Hero mit Mond/PCB/Tippzeilen (`assets/hero-*.svg`), Orbit (`assets/orbit-*.svg`), Projektkarten, Werkzeug, Snake-Workflow (`.github/workflows/snake.yml`), README
+- [x] Browser-Check (Chromium headless, Dark): Hero + Orbit gerendert, Tippzeile wipet sichtbar
 
 ## Offen
-- [ ] Gruppe 1: Hero (Banner mit Mond, Tipp-Animation, Hell/Dunkel)
-- [ ] Gruppe 2: Orbit (kreisende Icons)
-- [ ] Gruppe 3: Beweisstücke (3–4 Projektkarten)
-- [ ] Gruppe 4: Stack + Footer (Snake-Action, Kontakt-Platzhalter)
-- [ ] Gruppe 5: Abnahme (Browser-Check, Alt-Texte, Nein-Liste-Grep, Größen)
+- [ ] Alex-Abnahme der Optik
+- [ ] Push auf `GigaOaxl/GigaOaxl` main (Remote hat 1 Initial-Commit, Merge nötig), danach Action einmal manuell starten (Branch `output` für die Snake)
+- [ ] Profilbild einbauen / Figur, Kontaktlinks
 
 ## Nächste Schritte
-Alex gibt Gruppe 0 frei, dann Gruppe 1.
+Alex schaut sich alles an und gibt frei oder nennt Änderungen.
 
 ## Offene Eingaben von Alex
 Kontaktlinks, neues Profilbild, Freigabe der Akzentfarbe nach Variantenvergleich.
