@@ -19,6 +19,8 @@ Leicht, trocken, selbstironisch. Kein Lebenslauf. Kein JS (nur SVG mit CSS/SMIL 
 - [x] Gruppe 1–5 am Stück (Alex-Wunsch): Hero mit Mond/PCB/Tippzeilen (`assets/hero-*.svg`), Orbit (`assets/orbit-*.svg`), Projektkarten, Werkzeug, Snake-Workflow (`.github/workflows/snake.yml`), README
 - [x] Browser-Check (Chromium headless, Dark): Hero + Orbit gerendert, Tippzeile wipet sichtbar
 
+- [x] Überarbeitung: Löten raus, Alter 21, Abschnitt „Unter der Haube" (Codeguard, Pipeline, Gesundheitssysteme, Fortress/Agenten), Orbit: Mini-PC statt Lötkolben
+
 ## Offen
 - [ ] Alex-Abnahme der Optik
 - [ ] Push auf `GigaOaxl/GigaOaxl` main (Remote hat 1 Initial-Commit, Merge nötig), danach Action einmal manuell starten (Branch `output` für die Snake)
